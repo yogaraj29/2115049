@@ -7,7 +7,7 @@ primeurl="http://20.244.56.144/test/primes"
 fiburl="http://20.244.56.144/test/fibo"
 
 headers = {
-    'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzE4ODYwMDg3LCJpYXQiOjE3MTg4NTk3ODcsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImU4OWNlMzMyLTMzZTMtNGU4MC05ODc5LTE3Mjg1YTA2MzA5YyIsInN1YiI6IjIxMTUwNDlAbmVjLmVkdS5pbiJ9LCJjb21wYW55TmFtZSI6IllfbWFydCIsImNsaWVudElEIjoiZTg5Y2UzMzItMzNlMy00ZTgwLTk4NzktMTcyODVhMDYzMDljIiwiY2xpZW50U2VjcmV0IjoiVmlxaWVSTG5meFpvdWt6dyIsIm93bmVyTmFtZSI6IllPR0FSQUoiLCJvd25lckVtYWlsIjoiMjExNTA0OUBuZWMuZWR1LmluIiwicm9sbE5vIjoiMjExNTA0OSJ9.IL7nLt-KGwdYQTSDfXBDtf96Uur61kh447UgObSjhA0',
+    'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzE4ODY2MDQ3LCJpYXQiOjE3MTg4NjU3NDcsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImU4OWNlMzMyLTMzZTMtNGU4MC05ODc5LTE3Mjg1YTA2MzA5YyIsInN1YiI6IjIxMTUwNDlAbmVjLmVkdS5pbiJ9LCJjb21wYW55TmFtZSI6IllfbWFydCIsImNsaWVudElEIjoiZTg5Y2UzMzItMzNlMy00ZTgwLTk4NzktMTcyODVhMDYzMDljIiwiY2xpZW50U2VjcmV0IjoiVmlxaWVSTG5meFpvdWt6dyIsIm93bmVyTmFtZSI6IllPR0FSQUoiLCJvd25lckVtYWlsIjoiMjExNTA0OUBuZWMuZWR1LmluIiwicm9sbE5vIjoiMjExNTA0OSJ9.VmTHJxN-WoazMNkU8j_aKq24-6KgVVyq77hy5f1JTOA',
     'Content-Type': 'application/json',
     'Accept': 'application/json'
 }
@@ -15,12 +15,9 @@ headers = {
 app=FastAPI()
 window=[]
 
-
 @app.get("/number/e")
 def avgnum():
     response=requests.get(evenurl,headers=headers)
-    print(response)
-    
     server_res=response.numbers
     prev_window=window
     for i in server_res:
