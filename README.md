@@ -1,0 +1,1 @@
+use the command to run the code "uvicorn main:app --reload"
