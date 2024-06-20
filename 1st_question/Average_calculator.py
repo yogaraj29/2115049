@@ -21,7 +21,7 @@ def avgnum():
     server_res=response.numbers
     prev_window=window
     for i in server_res:
-        if len(window)==10:
+        if len(window)==20:
             window.pop(0)
         window.append(i)
     avg=int((sum(window)/len(window)))
@@ -38,7 +38,7 @@ def avgnum():
     server_res=response.numbers
     prev_window=window
     for i in server_res:
-        if len(window)==10:
+        if len(window)==20:
             window.pop(0)
         window.append(i)
     avg=int((sum(window)/len(window)))
@@ -55,7 +55,7 @@ def avgnum():
     server_res=response.numbers
     prev_window=window
     for i in server_res:
-        if len(window)==10:
+        if len(window)==20:
             window.pop(0)
         window.append(i)
     avg=int((sum(window)/len(window)))
@@ -72,7 +72,7 @@ def avgnum():
     server_res=response.numbers
     prev_window=window
     for i in server_res:
-        if len(window)==10:
+        if len(window)==20:
             window.pop(0)
         window.append(i)
     avg=int((sum(window)/len(window)))
